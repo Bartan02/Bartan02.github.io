@@ -28,7 +28,7 @@ function setup() {
   createCanvas(window.innerWidth, window.innerHeight)
   bird = new Bird();
   background(255,255,255,0)
-  
+  pixelDensity(1);
   noLoop()
 }
 
