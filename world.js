@@ -54,14 +54,18 @@ function draw() {
 
 
 function mousePressed() {
+	if(gameOn==1){
     	bird.fly();
     	wingSound.play();
+	}
 }
 
 function keyPressed() {
+    if(gameOn==1){
     if (key == ' ') {
         bird.fly();
 	wingSound.play();
+    }
     }
 }
 
