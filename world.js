@@ -8,6 +8,7 @@ function setup() {
   createCanvas(window.innerWidth, window.innerHeight)
   bird = new Bird();
   background(255,255,255,0)
+  noLoop()
 }
 
 function draw() {
@@ -33,13 +34,6 @@ function draw() {
     bird.show();
     bird.update();
     }
-    if(gameOn==1){
-	loop()
-	}
-	if(gameOn==0){
-    	noLoop()
-	}
-
 }
 
 
