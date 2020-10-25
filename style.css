@@ -38,3 +38,7 @@ body{
 	-webkit-text-stroke: 1.5px black;
 	z-index:2;
 }
+#wynik::selection
+{
+	background-color:rgba(255, 255, 255, 0);
+}
