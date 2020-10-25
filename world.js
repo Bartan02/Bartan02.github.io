@@ -9,7 +9,7 @@ function setup() {
 
 function draw() {
     clear();
-    if (frameCount % 200 == 0) {
+    if (frameCount % 150 == 0) {
         pipes.push(new Pipe());
     }
   //2 w gore punkty
