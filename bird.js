@@ -1,6 +1,6 @@
 var img;
 function preload() {
-  img = loadImage('ptak.png');
+  img = loadImage('http://bartan02.github.io/ptak.png');
 }
 class Bird {
     constructor() {
@@ -27,6 +27,10 @@ class Bird {
         }
         if (collideRectCircle(pipe.x, pipe.y+pipe.gap, pipe.width, pipe.height, this.x, this.y, this.width)) {
             return true;
+        }
+        if (collideRectCircle((pipe.x)+50, pipe.y, (pipe.width)/1000, pipe.gap, this.x, this.y, this.width)) {
+            addPoint();
+            return false;
         }
         return false;
     }

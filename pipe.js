@@ -7,8 +7,11 @@ class Pipe {
         this.y = height - this.height;
     }
     show() {
+        strokeWeight(0);
         fill('#543515');
         rect(this.x, this.y+this.gap, this.width, this.height);
+        fill('#00000000');
+        rect((this.x)+50, this.y, (this.width)/1000, this.gap );
         fill('#543515');
         rect(this.x, 0, this.width, height - this.height);
     }
