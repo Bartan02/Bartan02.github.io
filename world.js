@@ -12,7 +12,6 @@ function setup() {
 function draw() {
     time = frameCount;
     if(gameOn==1){
-    loop();
     clear();
     if (time % 150 == 0) {
         pipes.push(new Pipe());
@@ -33,9 +32,14 @@ function draw() {
     bird.show();
     bird.update();
     }
-    if(gameOn=0){
-    	noLoop()
-    }
+    
+}
+
+if(gameOn==1){
+	loop();
+}
+if(gameOn=0){
+    	noLoop();
 }
 
 function mousePressed() {
