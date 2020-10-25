@@ -19,14 +19,14 @@ body{
     transform: translate(-50%, -50%);
     text-align: center;
 }
-#menu h1,button{
-    font-family: 'Staatliches', cursive;
-}
 #menu h1{
     color: white;
     font-size: 72px;
+    font-family: 'Staatliches', cursive;
+	-webkit-text-stroke: 1.5px black;
 }
 #menu button{
+    font-family: Helvetica;
     font-size: 36px;
 }
 #wynik{
