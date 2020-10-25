@@ -38,6 +38,7 @@ class Bird {
             this.y = height
             this.velocity = 0
 			noLoop() 
+			gameOn=0;
         }
         if (this.y < 0) {
             this.y = 0
