@@ -4,13 +4,24 @@
     <title>FLAPPY BIRD</title>
     <meta charset="utf-8">
     <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
-    <style> html{overflow-y: hidden; max-width: 100%;} body {padding: 0; margin: 0; background-image: url("backgrund.jpg"); background-position: center; background-attachment: fixed; background-size: cover; background-repeat: no-repeat;} </style>
+    <link rel="stylesheet" href="style.css">
     <script src="p5.js"></script>
     <script src="p5.collide2d.js"></script>
     <script src="pipe.js"></script>
     <script src="bird.js"></script>
     <script src="world.js"></script>
+    <script>
+      var gameOn = 0;
+      var flappyBirdStart = function(){
+        document.getElementById("menu").remove();
+        gameOn=1;
+      }
+    </script>
   </head>
   <body>
+    <div id="menu">
+      <h1> Flappy Bird </h1>
+      <button onclick="flappyBirdStart()"> Start </button>
+    </div>
   </body>
 </html>
