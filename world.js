@@ -5,7 +5,6 @@ var points = 0;
 var gameOn = 0;
 var time;
 var wingSound;
-wingSound = new sound("wing.mp3");
 function sound(src) {
         this.sound = document.createElement("audio");
         this.sound.src = src;
@@ -21,6 +20,7 @@ function sound(src) {
         }
 }
 function setup() {
+  wingSound = new sound("wing.mp3");
   createCanvas(window.innerWidth, window.innerHeight)
   bird = new Bird();
   background(255,255,255,0)
