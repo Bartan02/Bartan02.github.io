@@ -34,7 +34,6 @@ function setup() {
 
 function draw() {
     time = frameCount;
-    frameRate(60);
     if(gameOn==1){
     clear();
     if (time % 150 == 0) {
