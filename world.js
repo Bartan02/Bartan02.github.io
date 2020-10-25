@@ -44,7 +44,7 @@ function draw() {
         pipe.update();
         if (bird.touches(pipe)) {
             noLoop()
-		console.log("GAME OVER");
+	   gameOn=0;
         }
     }
     bird.show();
