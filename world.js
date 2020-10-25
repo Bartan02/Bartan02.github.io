@@ -28,12 +28,13 @@ function setup() {
   createCanvas(window.innerWidth, window.innerHeight)
   bird = new Bird();
   background(255,255,255,0)
-  frameRate(60);
+  
   noLoop()
 }
 
 function draw() {
     time = frameCount;
+    frameRate(60);
     if(gameOn==1){
     clear();
     if (time % 150 == 0) {
