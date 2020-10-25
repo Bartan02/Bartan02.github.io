@@ -29,3 +29,11 @@ body{
 #menu button{
     font-size: 36px;
 }
+#wynik{
+	position: absolute;
+	margin-left: 50%;
+	color: white;
+	font-family: Helvetica;
+	font-size: 40px;
+	-webkit-text-stroke: 1.5px black;
+}
