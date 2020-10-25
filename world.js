@@ -53,6 +53,7 @@ function draw() {
 	   hitSound.play();
            noLoop()
 	   gameOn=0;
+	   theEnd();
         }
     }
     bird.show();
@@ -65,7 +66,6 @@ function mousePressed() {
 	if(gameOn==1){
     	bird.fly();
     	wingSound.play();
-	theEnd();
 	}
 }
 
@@ -74,7 +74,6 @@ function keyPressed() {
     if (key == ' ') {
         bird.fly();
 	wingSound.play();
-	theEnd();
     }
     }
 }
