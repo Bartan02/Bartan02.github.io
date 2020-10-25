@@ -16,10 +16,12 @@ function draw() {
 	if (frameCount > 450){
 		if((frameCount - 84) % 150 == 0)
 			points++;
+		console.log(points);
 	}
 	//1 punkt
 	if (frameCount == 380){
 		points++;
+		console.log(points);
 	}
     for (var pipe of pipes) {
         pipe.show();
