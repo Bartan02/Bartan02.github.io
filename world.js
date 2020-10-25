@@ -38,12 +38,13 @@ function draw() {
     if (time % 150 == 0) {
         pipes.push(new Pipe());
     }
-	if (time > 450){
-	if((time - 191) % 150 == 0)
-		points++;
-		pointSound.play();
-		document.getElementById("wynik").innerText = points;
-	}
+    if (time > 450){
+    if ((time - 191) % 150 == 0){
+	pointSound.play();
+	points++;
+	document.getElementById("wynik").innerText = points;
+    	}
+    }
     for (var pipe of pipes) {
         pipe.show();
         pipe.update();
