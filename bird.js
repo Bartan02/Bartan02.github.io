@@ -1,3 +1,7 @@
+var img;
+function preload() {
+  img = loadImage('ptak.png');
+}
 class Bird {
     constructor() {
         this.width = 50;
@@ -10,9 +14,9 @@ class Bird {
     }
 
     show() {
-        fill(255,255,0);
-        ellipse(this.x, this.y, this.width, this.height);
-
+        image(img, this.x, this.y, this.width, this.height);
+        //fill(255,255,0);
+        //ellipse(this.x, this.y, this.width, this.height);
     }
 
     fly() {
