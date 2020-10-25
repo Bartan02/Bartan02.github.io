@@ -50,4 +50,9 @@ body{
     text-align: center;
     font-family: Helvetica;
     -webkit-text-stroke: 1.5px black;
+    color:white;
+}
+#div1 a{
+	color:white;
+	text-decoration:none;
 }
