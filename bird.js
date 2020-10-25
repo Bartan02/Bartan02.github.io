@@ -4,7 +4,7 @@ function preload() {
 }
 class Bird {
     constructor() {
-        this.width = 50;
+        this.width = 83;
         this.height = 50;
         this.x = width / 2;
         this.y = height / 2;
@@ -15,8 +15,6 @@ class Bird {
 
     show() {
         image(img, this.x, this.y, this.width, this.height);
-        //fill(255,255,0);
-        //ellipse(this.x, this.y, this.width, this.height);
     }
 
     fly() {
