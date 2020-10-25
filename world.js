@@ -33,15 +33,15 @@ function draw() {
     bird.show();
     bird.update();
     }
-    
+    if(gameOn==1){
+	loop()
+	}
+	if(gameOn==0){
+    	noLoop()
+	}
+
 }
 
-if(gameOn==1){
-	loop();
-}
-if(gameOn==0){
-    	noLoop();
-}
 
 function mousePressed() {
     bird.fly();
