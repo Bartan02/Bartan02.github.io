@@ -5,6 +5,8 @@ var points = 0;
 var gameOn = 0;
 var time;
 var wingSound;
+var pointSound;
+var hitSound;
 function sound(src) {
         this.sound = document.createElement("audio");
         this.sound.src = src;
@@ -21,6 +23,8 @@ function sound(src) {
 }
 function setup() {
   wingSound = new sound("wing.mp3");
+  pointSound = new sound("point.mp3");
+  hitSound = new sound("hit.mp3");
   createCanvas(window.innerWidth, window.innerHeight)
   bird = new Bird();
   background(255,255,255,0)
@@ -37,13 +41,15 @@ function draw() {
 	if (time > 450){
 	if((time - 191) % 150 == 0)
 		points++;
+		pointSound.play();
 		document.getElementById("wynik").innerText = points;
 	}
     for (var pipe of pipes) {
         pipe.show();
         pipe.update();
         if (bird.touches(pipe)) {
-            noLoop()
+	   hitSound.play();
+           noLoop()
 	   gameOn=0;
         }
     }
