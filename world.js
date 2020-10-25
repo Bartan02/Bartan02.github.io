@@ -2,6 +2,7 @@ var bird;
 var pipes = [];
 var bg;
 var points = 0;
+var gameOn = 0;
 var time;
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight)
