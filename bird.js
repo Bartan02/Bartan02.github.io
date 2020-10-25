@@ -4,7 +4,7 @@ function preload() {
 }
 class Bird {
     constructor() {
-        this.width = 83;
+        this.width = 50;
         this.height = 50;
         this.x = width / 2;
         this.y = height / 2;
