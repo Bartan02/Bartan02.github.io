@@ -38,7 +38,7 @@ function draw() {
 if(gameOn==1){
 	loop();
 }
-if(gameOn=0){
+if(gameOn==0){
     	noLoop();
 }
 
