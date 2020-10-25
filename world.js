@@ -28,6 +28,7 @@ function setup() {
   createCanvas(window.innerWidth, window.innerHeight)
   bird = new Bird();
   background(255,255,255,0)
+  frameRate(60);
   noLoop()
 }
 
