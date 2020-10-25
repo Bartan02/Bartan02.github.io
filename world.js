@@ -2,6 +2,7 @@ var bird;
 var pipes = [];
 var bg;
 var points = 0;
+var time;
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight)
   bird = new Bird();
@@ -9,13 +10,14 @@ function setup() {
 }
 
 function draw() {
+    time = frameCount;
     if(gameOn==1){
     clear();
-    if (frameCount % 150 == 0) {
+    if (time % 150 == 0) {
         pipes.push(new Pipe());
     }
-	if (frameCount > 450){
-	if((frameCount - 191) % 150 == 0)
+	if (time > 450){
+	if((time - 191) % 150 == 0)
 		points++;
 		document.getElementById("wynik").innerText = points;
 	}
