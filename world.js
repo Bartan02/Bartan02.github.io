@@ -8,19 +8,15 @@ function setup() {
 }
 
 function draw() {
+    if(gameOn==1){
     clear();
     if (frameCount % 150 == 0) {
         pipes.push(new Pipe());
     }
-  //2 w gore punkty
 	if (frameCount > 450){
 	if((frameCount - 191) % 150 == 0)
 		points++;
 		document.getElementById("wynik").innerText = points;
-	}
-	//1 punkt
-	if (frameCount == 380){
-		points++;
 	}
     for (var pipe of pipes) {
         pipe.show();
@@ -29,6 +25,7 @@ function draw() {
             noLoop()
 		console.log("GAME OVER");
         }
+    }
     }
     bird.show();
     bird.update();
