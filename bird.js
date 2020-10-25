@@ -39,6 +39,7 @@ class Bird {
             this.velocity = 0
 		hitSound.play();
 		noLoop() 
+		theEnd();
 		gameOn=0;
         }
         if (this.y < 0) {
