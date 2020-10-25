@@ -5,6 +5,7 @@ var points = 0;
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight)
   bird = new Bird();
+  background(255,255,255,0)
 }
 
 function draw() {
@@ -26,10 +27,9 @@ function draw() {
 		console.log("GAME OVER");
         }
     }
-    }
     bird.show();
     bird.update();
-    background(255,255,255,0)
+    }
 }
 
 function mousePressed() {
