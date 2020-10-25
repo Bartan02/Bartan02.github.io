@@ -4,6 +4,8 @@ var bg;
 var points = 0;
 var gameOn = 0;
 var time;
+var wingSound;
+wingSound = new sound("wing.mp3");
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight)
   bird = new Bird();
@@ -39,11 +41,13 @@ function draw() {
 
 function mousePressed() {
     bird.fly();
+    wingSound.play();
 }
 
 function keyPressed() {
     if (key == ' ') {
         bird.fly();
+	wingSound.play();
     }
 }
 
