@@ -1,4 +1,6 @@
 var img;
+var wingSound;
+wingSound = new sound("wing.mp3");
 function preload() {
   img = loadImage('ptak.png');
 }
@@ -18,6 +20,7 @@ class Bird {
     }
 
     fly() {
+	wingSound.play();
         this.velocity =- this.jump;
     }
 
