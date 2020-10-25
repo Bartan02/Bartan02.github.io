@@ -6,15 +6,15 @@ class Bird {
     constructor() {
         this.width = 50;
         this.height = 50;
-        this.x = width / 2;
-        this.y = height / 2;
+        this.x = width/2;
+        this.y = height/2;
         this.gravity = 0.75;
         this.jump = 16
         this.velocity = 0;
     }
 
     show() {
-        image(img, this.x, this.y, this.width, this.height);
+        image(img, this.x-25, this.y-25, this.width, this.height);
     }
 
     fly() {
